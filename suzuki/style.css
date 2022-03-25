@@ -99,7 +99,7 @@ header {
 }
 
 .btn:hover {
-  letter-spacing: 2px;
+  letter-spacing: 4px;
 }
 
 .bike 
@@ -111,7 +111,9 @@ header {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 30px 100px;
+  height: 30px;
+  padding: 0 30px;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -151,4 +153,39 @@ header {
 
 .dots .dot.active {
   background: white;
+}
+
+.slider .slides {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  transition: 0.25s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.slider .slides.active {
+  opacity: 1;
+}
+
+.slider .slides h2 {
+  color: white;
+  font-size: 2.5em;
+}
+
+.slider .slider h2:last-child {
+  text-align: end;
+}
+
+.slider .slides h2 span {
+  color: red;
+  font-size: 0.5em;
+  font-weight: 400;
+  font-style: italic;
 }
