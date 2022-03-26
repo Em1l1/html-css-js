@@ -1,4 +1,4 @@
-/*==================== GOOGLE FONTS ====================*/
+ /*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 /*==================== VARIABLES CSS ====================*/
@@ -10,7 +10,7 @@
 	--hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
 	/* HSL color mode */
-	--first-color: hsl(var(--hue-color), 69% 61%)
+	--first-color: hsl(var(--hue-color), 69% 61%);
 	--first-color-second: hsl(var(--hue-color), 69% 61%);
 	--first-color-alt: hsl(var(--hue-color), 57% 53%);
 	--first-color-lighter: hsl(var(--hue-color), 92% 85%);
@@ -19,10 +19,12 @@
 	--text-color-light: hsl(var(--hue-color), 8% 65%);
 	--input-color: hsl(var(--hue-color), 70% 96%);
 	--body-color: hsl(var(--hue-color), 60% 99%);
-	--container-color: #fff
+	--container-color: #fff;
+	--scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+	--scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
 	/*========== Font and typography ==========*/
-	--body-font: font-family: 'Poppins', sans-serif;
+	--body-font: 'Poppins', sans-serif;
 
 	/* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
 	--big-font-size: 2rem;
@@ -39,7 +41,7 @@
 
 	/*========== Margenes Bottom ==========*/
 	/* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
-	--mb-0-25: .25rem
+	--mb-0-25: .25rem;
 	--mb-0-5: .5rem;
 	--mb-0-75: .75rem;
 	--mb-1: 1rem;
@@ -57,13 +59,13 @@
 /* Font size for large devices */
 @media screen and (min-width: 968px) {
 	:root {
-		--big-font-size: 3rem
+		--big-font-size: 3rem;
 		--h1-font-size: 2.25rem;
 		--h2-font-size: 1.5rem;
 		--h3-font-size: 1.25rem;
 		--normal-font-size: 1rem;
 		--small-font-size: .875rem;
-		--smaller-font-size: .813rem
+		--smaller-font-size: .813rem;
 	}
 }
 
@@ -76,7 +78,7 @@
 
 /*==================== BASE ====================*/
 * {
-	box-sizing: 0;
+	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
@@ -93,7 +95,7 @@ body {
 	color: var(--text-color);
 }
 
-h1,h2,h3,h4 {
+h1, h2, h3, h4 {
 	color: var(--title-color);
 	font-weight: var(--font-semi-bold);
 }
@@ -117,6 +119,7 @@ img {
 
 .section__title {
 	font-size: var(--h1-font-size);
+	color: var(--title-color);
 }
 
 .section__subtitle {
@@ -161,10 +164,12 @@ img {
 	align-items: center;
 }
 
+/* Check the color, not use de root variable */
 .nav__logo,
 .nav__toggle {
-	color: var(--title-color);
+	color: var(--first-color);
 	font-weight: var(--font-medium);
+	color: hsl(250, 69%, 61%);
 }
 
 .nav__logo:hover {
@@ -177,7 +182,8 @@ img {
 }
 
 .nav__toggle:hover {
-	color: var(--first-color);
+	color: hsl(250, 69%, 61%);
+	/* color: var(--first-color); */
 }
 
 
@@ -210,7 +216,9 @@ img {
 }
 
 .nav__link:hover {
-	color: var(--first-color);
+	/* color: var(--first-color); */
+	color: hsl(250, 69%, 61%);
+
 }
 
 .nav__icon {
@@ -227,7 +235,9 @@ img {
 }
 
 .nav__close:hover {
-	color: var(--first-color);
+	/* color: var(--first-color-alt); */
+	color: hsl(250, 69%, 61%);
+
 }
 /* show menu */
 .show-menu {
