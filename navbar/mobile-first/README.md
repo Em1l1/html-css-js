@@ -1,5 +1,3 @@
-Crear navbar responsive
-[]: # Language: markdown
-[]: # Path: README.md
+Created navbar mobilfirst.
 
-[https://www.youtube.com/watch?v=_hYUa-r0wFg](https://www.youtube.com/watch?v=_hYUa-r0wFg)
+[Responsive Mobile First Navbar HTML CSS JS](https://www.youtube.com/watch?v=_hYUa-r0wFg)
