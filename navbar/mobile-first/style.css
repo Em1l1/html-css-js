@@ -101,9 +101,15 @@ a {
     border-bottom: none;
   }
 
+
+  .color {
+    background: transparent;
+    padding: 6px;
+    border-radius: 5px;
+  }
   .color:hover {
     background: rgb(248, 104, 104);
-    padding: 6px 10px;
+    padding: 6px;
     border-radius: 5px;
   }
 
