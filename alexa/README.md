@@ -5,3 +5,6 @@ Responsive Portfolio Website Using Html, Css and JavaScript, With a beautiful us
 Don't forget to join the channel for more videos like this. [Bedimcode](https://www.youtube.com/c/Bedimcode)
 
 ![Resume cv](/preview.png)
+
+
+[unicons](https://iconscout.com/unicons/explore/line)
