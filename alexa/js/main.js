@@ -72,8 +72,8 @@ tabs.forEach(tab => {
 
 /*==================== SERVICES MODAL ====================*/
 const modalViews = document.querySelectorAll('.services__modal'),
-      modalBtns = document.querySelectorAll('.services__button'),
-      modalCloses = document.querySelectorAll('.servies__modal-close')
+  modalBtns = document.querySelectorAll('.services__button'),
+  modalCloses = document.querySelectorAll('.services__modal-close');
 
 
 let modal = function(modalClick){
@@ -147,7 +147,7 @@ window.addEventListener('scroll', scrollActive)
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader(){
   const nav = document.getElementById('header')
-  if(this.scrollY >= 200) nav.classList.add('scroll-header'); nav.clasList.remove('scroll-header')
+  if(this.scrollY >= 200) nav.classList.add('scroll-header'); nav.classList.remove('scroll-header')
 }
 
 window.addEventListener('scroll', scrollHeader)
