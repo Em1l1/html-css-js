@@ -15,9 +15,8 @@ body {
 
 .container {
 	background-color: var(--bg--white);
-
 	background-filter: blur(20px);
-	border: var(--border)
+	border: var(--border);
 	border-radius: 5px;
 	width: 80%;
 	margin: 100px auto;
