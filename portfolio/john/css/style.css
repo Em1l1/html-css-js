@@ -102,7 +102,7 @@ section {
 
 /* Custtom Scrollbar */
 
-::-webkit-scrollbar {
+::-webkit-scrollqbar {
 	width: 5px;
 }
 
