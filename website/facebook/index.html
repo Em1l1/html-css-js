@@ -1,69 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Facebook Clone</title>
-	<link rel="stylesheet" href="main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="main.css" />
 
-	<!-- Google fonts Icons -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-</head>
-<body>
-	<div class="header">
+    <!-- Google fonts Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header starts -->
+    <div class="header">
+      <div class="header__left">
+        <img src="img/fb-logo.png" alt="logo facebook" />
+        <div class="header__input">
+          <span class="material-icons">search</span>
+          <input type="text" placeholder="Search Facebook" />
+        </div>
+      </div>
 
-		<div class="header__left">
-			<img src="img/fb-logo.png" 
-			alt="logo facebook"
-			/>
-			<div class="header__input">
-				<span class="material-icons">search</span>
-				<input type="text" placeholder="Search Facebook">
-			</div>
+      <div class="header__middle">
+        <div class="header__option active">
+          <span class="material-icons">home</span>
+        </div>
+
+        <div class="header__option">
+          <span class="material-icons">flag</span>
+        </div>
+
+        <div class="header__option">
+          <span class="material-icons">subscriptions</span>
+        </div>
+
+        <div class="header__option">
+          <span class="material-icons">storefront</span>
+        </div>
+
+        <div class="header__option">
+          <span class="material-icons">supervised_user_circle</span>
+        </div>
+      </div>
+
+      <div class="header__right">
+        <div class="header__info">
+          <img class="user__avatar" src="img/avatar.png" alt="avatar" />
+          <h4>Somanath Goudar</h4>
+        </div>
+
+        <span class="material-icons">add</span>
+        <span class="material-icons">forum</span>
+        <span class="material-icons">notifications_active</span>
+        <span class="material-icons">expand_more</span>
+      </div>
 		</div>
+      <!-- Header Ends -->
 
-		<div class="header__middle">
+      <!-- main body starts -->
+      <div class="main__body">
+        <!-- sidebar starts -->
+        <div class="sidebar">
+          <div class="sidebarRow">
+            <img class="user__avatar" src="img/avatar.png" alt="avatar" />
+            <h4>Somanath Goudar</h4>
+          </div>
+					<div class="sidebarRow">
+						<span class="material-icons">local_hospital</span>
+						<h4>Covid 19 Information center</h4>
+					</div>
 
-			<div class="header__option">
-				<span class="material-icons">home</span>
-			</div>
+					<div class="sidebarRow">
+						<span class="material-icons">emoji_flags</span>
+						<h4>Pages</h4>
+					</div>
+					<div class="sidebarRow">
+						<span class="material-icons">people</span>
+						<h4>People</h4>
+					</div>
+					<div class="sidebarRow">
+						<span class="material-icons">chat</span>
+						<h4>Messenger</h4>
+					</div>
+					<div class="sidebarRow">
+						<span class="material-icons">storefront</span>
+						<h4>Marketplace</h4>
+					</div>
+					<div class="sidebarRow">
+						<span class="material-icons">video_library</span>
+						<h4>videos</h4>
+					</div>
+					<div class="sidebarRow">
+						<span class="material-icons">expand_more</span>
+						<h4>More</h4>
+					</div>
+        </div>
+        <!-- sidebar ends -->
 
-			<div class="header__option">
-				<span class="material-icons">flag</span>
-			</div>
+				<!-- Feed starts -->
+				<div class="feed">
+					<div class="storyReel">
+						<!-- story starts 1 -->
+						<div style="background-image: url(img/image2.jpg)"  class="story">
+							<img src="img/avatar.png" alt="avatar" />
+							<h4>Somanath Goudar</h4>
+						</div>
+						<!-- story ends -->
 
-			<div class="header__option">
-				<span class="material-icons">subscriptions</span>
-			</div>
+						<!-- story starts 2 -->
+						<div style="background-image: url(img/image2.jpg)"  class="story">
+							<img src="img/avatar.png" alt="avatar" />
+							<h4>Somanath Goudar</h4>
+						</div>
+						<!-- story ends -->
 
-			<div class="header__option">
-				<span class="material-icons">storefront</span>
-			</div>
+						<!-- story starts 3 -->
+						<div style="background-image: url(img/image2.jpg)"  class="story">
+							<img src="img/avatar.png" alt="avatar" />
+							<h4>Somanath Goudar</h4>
+						</div>
+						<!-- story ends -->
 
-			<div class="header__option">
-				<span class="material-icons">supervised_user_circle</span>
-			</div>
+						<!-- story starts 4 -->
+						<div style="background-image: url(img/image2.jpg)"  class="story">
+							<img src="img/avatar.png" alt="avatar" />
+							<h4>Somanath Goudar</h4>
+						</div>
+						<!-- story ends -->
 
-		</div>
+						<!-- story starts 5 -->
+						<div style="background-image: url(img/image2.jpg)"  class="story">
+							<img src="img/avatar.png" alt="avatar" />
+							<h4>Somanath Goudar</h4>
+						</div>
+						<!-- story ends -->
 
-		<div class="header__right">
-			<div class="header__infp">
-				<img 
-				class="user__avatar"
-				src="img/avatar.png" 
-				alt="avatar" 
-				/>
-				<h4>Somanath Goudar</h4>
-			</div>
-
-			<span class="material-icons">add</span>
-			<span class="material-icons">forum</span>
-			<span class="material-icons">notifications_active</span>
-			<span class="material-icons">expand_more</span>
-		</div>
-
-
-	</div>
-</body>
+						<!-- story starts 6 -->
+						<div style="background-image: url(img/image2.jpg)"  class="story">
+							<img src="img/avatar.png" alt="avatar" />
+							<h4>Somanath Goudar</h4>
+						</div>
+						<!-- story ends -->
+					</div>
+				</div>
+				<!-- Feed ends -->
+      </div>
+      <!-- main body ends -->
+  </body>
 </html>

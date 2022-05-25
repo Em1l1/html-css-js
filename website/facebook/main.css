@@ -42,7 +42,86 @@
 .header__input input {
 	border: none;
 	background-color: transparent;
-	outline-width: 0; 
+	outline-width: 0; |
 }
 
-/*minuto 19:05*/
+.header__middle {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+}
+
+.header__option .material-icons {
+	font-size: xx-large;
+	color: gray;
+}
+
+.header__option:hover .material-icons {
+	color: #2e81f4;
+}
+
+.header__option {
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+	cursor: pointer;
+}
+
+.header__option.active .material-icons {
+	color: #2e81f4;
+}
+
+.header__option.active {
+	border-bottom: 4px solid #2e81f4;
+}
+
+.header__option:hover {
+	background-color: #eff2f5;
+	border-radius: 10px;
+	align-items: center;
+	padding: 0 30px;
+	border-bottom: none;
+}
+
+.header__info {
+	display: flex;
+	align-items: center;
+}
+
+.header__info h4 {
+	margin-left: 10px;
+}
+
+.header__right {
+	display: flex;
+	align-items: center;
+}
+
+.header__right .material-icons {
+	color: gray;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+/* SideBar */
+.sidebarRow {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.sidebarRow:hover {
+	background-color: lightgray;
+	border-radius: 10px; 
+}
+
+.sidebarRow h4 {
+	margin-left: 20px;
+	font-weight: 600;
+}
+
+.sidebarRow .material-icons {
+	font-size: xx-large;
+	color: #2e81f4;
+}
