@@ -5,12 +5,14 @@
 	--prueba: (180deg,#21c8f6,#637bff);
 }
 
-.background1-left-column{
+.background1-left-column, 
+.one {
 	background: linear-gradient(180deg,#21c8f6,#637bff);
 }
 
 
-.background2-left-column{
+.background2-left-column,
+.two{
 	background: linear-gradient(180deg ,#6edcc4,#1aab8b);
 }
 
@@ -88,20 +90,22 @@ body {
 	color: var(--black-text);
 }
 
-.button {
-	font-size: 1.2rem;
-	padding: .8rem 1.3rem;
-	letter-spacing: .1rem;
-	align-self: flex-end;
-	font-size: 1.2rem;
-	padding: .8rem 1.3rem;
-	letter-spacing: .1rem;
-	align-self: flex-end;
+.btn {
 	border-radius: 3rem;
 	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 	color: var(--white-text);
 	font-size: 1.2rem;
-	padding: .8rem 1.3rem;
+	padding: .8rem 1.5rem;
 	letter-spacing: .1rem;
 	align-self: flex-end;
+	font-weight: 500;
+}
+
+@media(max-width: 1030px){
+	.container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: auto;
+	}
 }
