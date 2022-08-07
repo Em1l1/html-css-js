@@ -336,7 +336,12 @@ button {
 
 .about-text .tab-content {
 	padding: 40px 0;
+	display: none;
  }
+
+.about-text .tab-content.active {
+	display: block;
+}
 
 .about-text .timeline-item {
 	margin-bottom: 30px;
@@ -374,4 +379,8 @@ button {
 
 .about-text .timeline-item h4 span {
 	font-weight: 400;
+}
+
+.about-text .btn {
+	margin: 0 15px 15px 0;
 }
