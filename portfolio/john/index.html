@@ -8,8 +8,11 @@
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+
+  <!-- Overlay Start -->
+  <div class="overlay"></div>
+  <!-- Overlay End -->
 
   <!-- main -->
   <div class="main">
@@ -24,10 +27,11 @@
           <nav class="nav">
             <div class="nav-inner">
               <ul>
-                <li><a href="#" class="nav-item">home</a></li>
-                <li><a href="#" class="nav-item">about</a></li>
-                <li><a href="#" class="nav-item">portfolio</a></li>
-                <li><a href="#" class="nav-item">contact</a></li>
+                <li><a href="#home" class="nav-item link-item">home</a></li>
+                <li><a href="#about" class="nav-item link-item">about</a></li>
+                <li><a href="#portfolio" class="nav-item link-item">portfolio</a></li>
+                <li><a href="#contact" class="nav-item link-item">contact</a></li>
+
               </ul>
             </div>
           </nav>
@@ -37,15 +41,15 @@
     <!-- Header End -->
 
     <!-- Home Section Start -->
-    <section class="home-section align-items-center hidden">
+    <section class="home-section align-items-center active" id="home">
       <div class="container">
         <div class="row align-items-center">
           <div class="home-text">
             <p>Hello, I'm</p>
             <h1>Jonh Doe</h1>
             <h2>Frontend Web Developer</h2>
-            <a href="#" class="btn">more about me</a>
-            <a href="#" class="btn">portfolio</a>
+            <a href="#about" class="btn link-item">more about me</a>
+            <a href="#portfolio" class="btn link-item">portfolio</a>
           </div>
           <div class="home-img">
             <div class="img-box">
@@ -57,7 +61,7 @@
     </section>
     <!-- Home Section end -->
     <!-- About section start -->
-    <section class="about-section section-padding hidden">
+    <section class="about-section section-padding" id="about">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -154,8 +158,8 @@
               </div>
             </div>
             <!-- Experience End -->
-            <a href="#" class="btn">download cv</a>
-            <a href="#" class="btn">contact me</a>
+            <a href="cv.pdf" target="_blank" class="btn">download cv</a>
+            <a href="#contact" class="btn link-item">contact me</a>
           </div>
         </div>
       </div>
@@ -163,7 +167,7 @@
     <!-- About section end -->
 
     <!-- ------- Portfolio Section Start ------- -->
-    <section class="portafolio-section sec-padding hidden">
+    <section class="portafolio-section sec-padding" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -338,7 +342,7 @@
     <!-- ------- Portfolio Section End ------- -->
 
     <!-- Contact Section Start -->
-      <section class="contact-section sec-padding hidden">
+      <section class="contact-section sec-padding" id="contact">
         <div class="container">
           <div class="row">
             <div class="section-title">
