@@ -1,0 +1,16 @@
+@use "./sass/index";
+@use "./sass/variables/colors" as pop;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  background-image: url(./img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
