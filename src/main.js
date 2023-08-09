@@ -1,6 +1,6 @@
 // import "bootstrap/dist/bootstrap.min.css";
-import "./main.css";
-import { router } from "./router/index.routers";
+import "./main.scss"
+import { router } from "./routes/index.routes";
 
 router(window.location.hash);
 
