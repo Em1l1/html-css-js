@@ -1,0 +1,58 @@
+/*=============== SIDEBAR ===============*/
+.nav {
+  width: 72px;
+  height: max-content;
+  position: fixed;
+  inset: 0;
+  margin: auto 0;
+  background: greenyellow;
+}
+
+.nav__list {
+  position: relative;
+  background-color: var(--first-color);
+  padding-block: 70px;
+  border-radius: 0 51px 51px 0;
+  display: grid;
+  justify-content: center;
+  row-gap: 2rem;
+  // background: red;
+}
+
+.nav__link {
+  position: relative;
+  display: inline-flex;
+  padding: 4px;
+  border-radius: 50%;
+  transition: background .4s;
+  background: red;
+}
+
+.nav__link i {
+  font-size: 1.25rem;
+  color: var(--white-color);
+  transition: color .4s;
+  background: green;
+  padding-left: -6rem;
+  text-align: center;
+}
+
+.nav__name {
+  position: absolute;
+  top: 0;
+  transform: translateX(56px);
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 3rem;
+  pointer-events: none;
+  transition: transform .5s, opacity .5s;
+  opacity: 0;
+}
+
+.nav__link:hover .nav__name {
+  opacity: 1;
+  transform: translateX(48px);
+}
