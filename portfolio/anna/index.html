@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Homepage</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- remixIcon CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css" integrity="sha512-dTsohxprpcruDm4sjU92K0/Gf1nTKVVskNHLOGMqxmokBSkfOAyCzYSB6+5Z9UlDafFRpy5xLhvpkOImeFbX6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="header">
+    <nav>
+      <a href="#" class="logo">
+        l<span>o</span>g<span>o</span>
+      </a>
+      <ul class="nav_list">
+        <li class="active"><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Lab</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <button class="nav_burger">
+        <span></span>
+        <span></span><span></span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- start main -->
+  <div class="main">
+    <div class="section_left">
+      <div class="title">
+        <p>Hello</p>
+        <h1>I'm Anna Smith <br> A <span id="element">{ Web Developer</span></h1>
+      </div>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ut blanditiis impedit repellendus animi, quisquam, maxime ex corrupti repudiandae doloremque, tempore culpa asperiores soluta illo voluptates alias. Velit, sed aut!</p>
+      <div class="btns">
+        <button>Hire Me</button>
+        <button>Know More</button>
+      </div>
+    </div>
+    
+    <div class="section_right">
+      <img src="./image/woman1.png" alt="">
+      <div class="media_container">
+        <div class="instagram">
+          <span class="countMember">100K</span>
+          <span class="name_social">Instagram</span>
+        </div>
+        <div class="youtube">
+          <span class="countMember">320K</span>
+          <span class="name_social">Youtube</span>
+        </div>
+        <div class="facebook">
+          <span class="countMember">150K</span>
+          <span class="name_social">Facebook</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="social_media">
+      <i class="ri-instagram-line"></i>
+      <i class="ri-youtube-line"></i>
+      <i class="ri-facebook-circle-line"></i>
+    </div>
+  </div>
+  <!-- end main -->
+
+  <!-- Typed Js CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  
+  <script>
+    // menu Hamburge
+    let burgerMenu = document.querySelector('.nav_burger')
+    let navbar = document.querySelector('.nav_list');
+    let navItems = document.querySelectorAll('.nav_list li a')
+
+    burgerMenu.addEventListener('click', () => {
+      navbar.classList.toggle('move');
+      if (navbar.classList.contains('move')) {
+        burgerMenu.classList.add('activeBurger');
+      } else {
+        burgerMenu.classList.remove('activeBurger');
+      }
+    })
+
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        navbar.classList.remove('move');
+        burgerMenu.classList.remove('activeBurger');
+      })
+    })
+
+    // typed js
+    const typed = new Typed('#element', {
+      strings: ['{ Web Developer', '{ Designer', '{ Freelancer'],
+      typeSpeed: 70,
+      backSpeed: 30,
+      loop: true,
+      loopCount: Infinity,
+      showCursor: true,
+      cursorChar: " }"
+    });
+
+    TweenMax.from('.logo', 1, {
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from('nav ul li', 1, {
+      opacity: 0,
+      x: -60,
+      ease: Power3.easeInOut
+    }, .08)
+
+    TweenMax.from('.title', 1.2, {
+      opacity: 0,
+      delay: .5,
+      x: -80,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from('.text', 1.2, {
+      opacity: 0,
+      delay: 0,
+      x: -80,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from('.btns', 1, {
+      opacity: 0,
+      delay: 9,
+      x: -80,
+      ease: Expo.easeInOut
+    })
+
+   TweenMax.from('.instagram', 1, {
+      opacity: 0,
+      delay: 1.3,
+      x: -70,
+      ease: Expo.easeInOut
+    })
+
+   TweenMax.from('.youtube', 1, {
+      opacity: 0,
+      delay: 1.6,
+      x: 70,
+      ease: Expo.easeInOut
+    })
+
+   TweenMax.from('.facebook', 1, {
+      opacity: 0,
+      delay: 1.9,
+      x: 70,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from('.social_media', 1, {
+      opacity: 0,
+      delay: 2.2,
+      x: 100,
+      ease: Expo.easeInOut
+    })
+
+
+  </script>
+</body>
+</html>
